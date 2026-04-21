@@ -14,11 +14,11 @@ def count_chars(the_book_text):
     return finished_list_of_unique
 
 def clean_print(dic_of_chars):
-    unsorted_list = []
+    sorted_list = []
     for key in dic_of_chars:
-        unsorted_list.append({"char": key, "num": dic_of_chars[key]})
-    unsorted_list.sort(reverse=True, key=helper_print)
-    return unsorted_list
+        sorted_list.append({"char": key, "num": dic_of_chars[key]})
+    sorted_list.sort(reverse=True, key=helper_print)
+    return sorted_list
     
 def helper_print(dic_to_sort_num):
     return dic_to_sort_num["num"]
